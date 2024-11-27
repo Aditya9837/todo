@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .hero-description {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ToDo Input Section */
+  .todo-input-section {
+    margin: 40px 0;
+  }
+  
+  .todo-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .add-task-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Features Section */
+  .features-section {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .todo-input {
+      width: 80%;
+    }
+  
+    .features {
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  
