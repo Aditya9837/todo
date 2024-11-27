@@ -40,7 +40,8 @@ const NewTodoForm = () => {
   };
 
   return (
-    <div className="new-todo-form">
+  <div className='container'>
+      <div className="new-todo-form">
       <h2>Create a New Todo</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -68,6 +69,7 @@ const NewTodoForm = () => {
         <button type="submit" className="submit-btn">Add Todo</button>
       </form>
     </div>
+  </div>
   );
 };
 
