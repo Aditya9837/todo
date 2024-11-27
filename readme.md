@@ -32,14 +32,14 @@ Navigate to the server directory and install the required dependencies:
 
 bash
 Copy code
-cd server
+cd Backend
 npm install
 3. Frontend Setup
 Navigate to the frontend directory and install the required dependencies:
 
 bash
 Copy code
-cd frontend
+cd Frontend
 npm install
 4. Environment Variables (Backend)
 Create a .env file in the server directory with the following variables:
@@ -55,8 +55,8 @@ Start the backend server in the server directory:
 
 bash
 Copy code
-cd server
-npm start
+cd Backend
+nodemon server.js
 The backend server will run on http://localhost:5000.
 
 Run the Frontend Development Server
@@ -64,7 +64,7 @@ To run the frontend in development mode, use the following command in the fronte
 
 bash
 Copy code
-cd frontend
+cd Frontend
 npm run dev
 The frontend development server will run on http://localhost:5173 (by default).
 
@@ -73,7 +73,7 @@ When you're ready to deploy the frontend, you need to build the production-ready
 
 bash
 Copy code
-cd frontend
+cd Frontend
 npm run build
 This will create the build files in the frontend/dist directory.
 
@@ -90,8 +90,8 @@ Once the frontend build is copied to the backend, you can start the backend serv
 
 bash
 Copy code
-cd server
-npm start
+cd Backend
+nodemon server.js
 The app will be accessible at http://localhost:5000 and will serve both the backend API and the frontend.
 
 Scripts
