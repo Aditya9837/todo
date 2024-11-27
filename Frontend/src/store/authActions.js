@@ -30,9 +30,9 @@ export const login = createAsyncThunk(
 // Register action
 export const register = createAsyncThunk(
   'auth/register',
-  async ({ email, password }, { rejectWithValue }) => {
+  async ({name, email, password ,confirmPassword}, { rejectWithValue }) => {
     try {
-      const response = await api.post('/register', { email, password }); // Corrected API call
+      const response = await api.post('/register', { name,email, password,confirmPassword }); // Corrected API call
       // Store user in a cookie with a specified expiration time (e.g., 1 day)
       Cookies.set('user', JSON.stringify(response.data.user), { expires: 5 });
       return response.data;
